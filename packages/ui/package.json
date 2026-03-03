@@ -1,0 +1,29 @@
+{
+  "name": "@wxt-monorepo/ui",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Shared React UI components and Tailwind config for extension pages",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles": "./src/styles/globals.css",
+    "./tailwind-config": "./tailwind.config.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@wxt-monorepo/config": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "@wxt-monorepo/config/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@wxt-monorepo/shared/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}
