@@ -1,0 +1,23 @@
+{
+  "name": "@wxt-monorepo/shared",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Shared business logic: messaging, storage, logging, feature flags",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./messaging": "./src/messaging/index.ts",
+    "./storage": "./src/storage/index.ts",
+    "./logging": "./src/logging/index.ts",
+    "./feature-flags": "./src/feature-flags/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts"
+  },
+  "devDependencies": {
+    "@wxt-monorepo/config": "workspace:*",
+    "typescript": "^5.7.3",
+    "wxt": "^0.20.3"
+  }
+}

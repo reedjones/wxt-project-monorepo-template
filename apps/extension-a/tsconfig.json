@@ -1,0 +1,12 @@
+{
+  "extends": "@wxt-monorepo/config/tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@wxt-monorepo/shared": ["../../packages/shared/src/index.ts"],
+      "@wxt-monorepo/shared/*": ["../../packages/shared/src/*"],
+      "@wxt-monorepo/ui": ["../../packages/ui/src/index.ts"],
+      "@wxt-monorepo/ui/*": ["../../packages/ui/src/*"]
+    }
+  },
+  "include": [".wxt/types/**/*", "entrypoints/**/*", "wxt.config.ts"]
+}

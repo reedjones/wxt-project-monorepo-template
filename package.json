@@ -1,0 +1,27 @@
+{
+  "name": "wxt-monorepo",
+  "private": true,
+  "version": "0.0.1",
+  "description": "pnpm workspace monorepo for WXT browser extensions",
+  "scripts": {
+    "dev:ext-a": "pnpm --filter extension-a dev",
+    "dev:ext-b": "pnpm --filter extension-b dev",
+    "dev": "pnpm --filter extension-a --filter extension-b --parallel dev",
+    "build:ext-a": "pnpm --filter extension-a build",
+    "build:ext-b": "pnpm --filter extension-b build",
+    "build": "pnpm --filter extension-a --filter extension-b run build",
+    "lint": "pnpm --recursive --parallel run lint",
+    "typecheck": "pnpm --recursive --parallel run typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\" --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@9.15.9"
+}

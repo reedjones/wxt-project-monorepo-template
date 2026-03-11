@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Default brand tokens — override these per extension */
+    --color-brand-50: 239 246 255;
+    --color-brand-100: 219 234 254;
+    --color-brand-500: 59 130 246;
+    --color-brand-600: 37 99 235;
+    --color-brand-900: 30 58 138;
+    --radius: 0.5rem;
+  }
+}
